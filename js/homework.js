@@ -54,7 +54,7 @@ console.log(tagCounts);
 
 // Alina's solution
 // const returnObjTagsCount = array => {
-//     const arrayOfTags = tweets.flatMap(tweet => tweet.tags);
+//     const arrayOfTags = array.flatMap(tweet => tweet.tags);
 //     return arrayOfTags.reduce((acc, tag) => (tag in acc ? {...acc, [tag]: ++acc[tag]} : {...acc, [tag]: 1}), {});
 // };
 // console.log(returnObjTagsCount(tweets));
