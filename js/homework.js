@@ -1,15 +1,4 @@
 "use sctict";
-// const returnNewString = (str) => {
-//     let arrayOfCapitals = str.toUpperCase().split("");
-//     return arrayOfCapitals.reduce((acc, letter, index) => {
-//         let newString = `${acc}-${letter}`;
-//         for (let i = 0; i < index; i++) {
-//             newString += letter.toLowerCase();
-//         }
-//         return newString;
-//     });
-// };
-
 /**
  *? Функція має повертати рядок, в якому кожна літера, яку приймає функція розділена тире, але також кожна літера має повторитись певну кількість разів, залежно від її розташування
  */
@@ -21,6 +10,18 @@ const decodeAbbreviature = string =>
 
 console.log(decodeAbbreviature("abc"));
 console.log(decodeAbbreviature("xyz"));
+
+// Alina's solution
+// const returnNewString = (str) => {
+//     let arrayOfCapitals = str.toUpperCase().split("");
+//     return arrayOfCapitals.reduce((acc, letter, index) => {
+//         let newString = `${acc}-${letter}`;
+//         for (let i = 0; i < index; i++) {
+//             newString += letter.toLowerCase();
+//         }
+//         return newString;
+//     });
+// };
 
 /**
  *? Поверніть об'єкт, в якому вказано кількість тегів.
@@ -50,3 +51,10 @@ function countTags(tweets) {
 
 const tagCounts = countTags(tweets);
 console.log(tagCounts);
+
+// Alina's solution
+// const returnObjTagsCount = array => {
+//     const arrayOfTags = tweets.flatMap(tweet => tweet.tags);
+//     return arrayOfTags.reduce((acc, tag) => (tag in acc ? {...acc, [tag]: ++acc[tag]} : {...acc, [tag]: 1}), {});
+// };
+// console.log(returnObjTagsCount(tweets));
